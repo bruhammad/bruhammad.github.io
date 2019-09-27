@@ -1,5 +1,32 @@
+@font-face {
+  font-family: FakeArabic;
+  src: url('fonts/fakearab.otf');
+}
+
+@font-face {
+  font-family: AladdinFont;
+  src: url('fonts/aladdin.ttf');
+}
+
 body {
-	background-image: url('/images/wallpaper.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
+	/*font-family: FakeArabic;*/
+	background-image: url('images/wallpaper.jpg');
+	background-repeat: repeat;
+}
+
+#layouttbl {
+	margin: auto;
+	background-color: white;
+	width: 1024px;
+}
+
+#sitetitle {
+	color: red;
+	font-family: AladdinFont;
+	font-weight: bold;
+	font-size: 36pt;
+}
+
+.sidebar {
+	width: 120px;
 }
