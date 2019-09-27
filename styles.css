@@ -20,13 +20,50 @@ body {
 	width: 1024px;
 }
 
+#headercol {
+	background-color: yellow;
+}
+
 #sitetitle {
+	background-color: yellow;
 	color: red;
 	font-family: AladdinFont;
 	font-weight: bold;
 	font-size: 36pt;
 }
 
+#sitesubtitle {
+	color: purple;
+	font-style: italic;
+	padding-left: 28px;
+}
+
 .sidebar {
 	width: 120px;
+}
+
+#footercol {
+	background-color: black;
+	color: white;
+	font-family: sans-serif;
+	font-weight: 900;
+}
+
+.imgblink {
+	animation-duration: 0.2s;
+	animation-name: anim_imgblink;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes anim_imgblink {
+	from {
+		-webkit-filter: invert(0);
+		filter: invert(0);
+	}
+	
+	to {
+		-webkit-filter: invert(100);
+		filter: invert(100);
+	}
 }
